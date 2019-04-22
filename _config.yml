@@ -80,4 +80,4 @@ theme: next
 deploy:
   type: git
   repository: https://github.com/chrisxxp/chrisxxp.github.io.git
-  branch: hexo
+  branch: master

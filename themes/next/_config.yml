@@ -59,22 +59,22 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#fff"
 
   # If not defined, `author` from Hexo main config will be used.
   copyright:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
 
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.beian.miit.gov.cn
@@ -95,12 +95,12 @@ creative_commons:
   license: by-nc-sa
   sidebar: false
   post: false
-  language:
+  language: zh-Hans
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/chrisxxp
   title: Follow me on GitHub
 
 
@@ -157,11 +157,11 @@ baidu_push: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 # External url should start with http:// or https://
 menu:
-  home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
-  archives: /archives/ || archive
+  home: / || 首页
+  about: /about/ || 关于
+  tags: /tags/ || 标签
+  categories: /categories/ || 分类
+  archives: /archives/ || 归档
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -177,9 +177,9 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -992,10 +992,10 @@ pace_theme: pace-theme-minimal
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest:
-  enable: false
-  onmobile: true # display on mobile or not
-  color: "0,0,255" # RGB values, use ',' to separate
-  opacity: 0.5 # the opacity of line: 0~1
+  enable: true
+  onmobile: false # display on mobile or not
+  color: "255,255,255" # RGB values, use ',' to separate
+  opacity: 1 # the opacity of line: 0~1
   zIndex: -1 # z-index property of the background
   count: 99 # the number of lines
 
@@ -1105,8 +1105,8 @@ vendors:
   # Example:
   # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
   # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
-  canvas_nest:
-  canvas_nest_nomobile:
+  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest.min.js
+  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js
 
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-three
@@ -1116,7 +1116,7 @@ vendors:
   # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
   # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
   three:
-  three_waves:
+  three_waves: true
   canvas_lines:
   canvas_sphere:
 

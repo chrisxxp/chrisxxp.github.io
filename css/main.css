@@ -445,6 +445,7 @@ body {
 body {
   background: url("../../../images/1.jpg") no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
 .container {
   position: relative;
@@ -1839,7 +1840,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d012df;
+  background: #ffff6c;
 }
 .feed-link,
 .chat {
